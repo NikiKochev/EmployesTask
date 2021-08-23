@@ -41,7 +41,7 @@ class PracticalTaskCreateDataFromJsonTest {
         String filePath = "test.json";
 
         Seller s  = new Seller("John Smith", 250, 10, 0.5);
-        Seller s1 = new Seller("David Prowless", 250, 10,0.5);
+        Seller s1 = new Seller("David Prowless", 230, 10,0.5);
 
         List<Seller> expectedResult = new ArrayList<>();
         expectedResult.add(s);
@@ -61,7 +61,7 @@ class PracticalTaskCreateDataFromJsonTest {
         for(Seller s : l1 ){
             isTheSame = false;
             for (Seller s1 : l2){
-                if(s1.equals(s)){
+                if(s.equals(s1)){
                     isTheSame = true;
                     break;
                 }
