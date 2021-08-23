@@ -34,7 +34,7 @@ public class Report {
                     orderedSellersByScore.get(reportColumn.getScore()).add(reportColumn);
                 });
 
-        int limit = Math.max(orderedSellersByScore.size() / definition.getPeriodLimit(), 1);
+        int limit = Math.max(orderedSellersByScore.size() / 100 * definition.getPeriodLimit(), 1);
         orderedSellersByScore
                 .entrySet()
                 .stream()
